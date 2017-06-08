@@ -1,0 +1,94 @@
+.row {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-header {
+    z-index: 1000;
+}
+
+.site-header--logo {
+  width: 2.2rem;
+  height: 2.2rem;
+  background-position-x: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+}
+.site-header .site-header--title {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    display: inline-block;
+    padding-left: 0.8rem;
+    vertical-align: middle;
+    margin-bottom: -0.2rem;
+}
+.header.shrink {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding-top: 0.2rem;
+  padding-bottom: 0.3rem;
+  box-shadow: 4px 4px 6px rgba(20, 20, 20, 0.1);
+  top: 0px;
+  width: 100%;
+}
+.header.shrink .row .brand-container {
+  margin-top:5px;
+}
+.header nav, .header .brand-container {
+  margin-top:10px;
+}
+.header.shrink nav {
+  margin-top:0px;
+}
+.header.shrink a, .header.shrink .site-header--title {
+  color: #0054a3;
+}
+nav a {
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+nav a:visited, a:link {
+  /*color: #607D8B;*/
+}
+nav a:hover {
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  cursor: pointer;
+  cursor: hand;
+}
+nav a.active {
+  /*color: #039be5;*/
+}
+
+.admin-menu {
+    border: 1px solid #FFFFFF;
+    background: #0054a3;
+    color: #FFFFFF;
+    width: 130px;
+    padding: 5px;
+    position: fixed;
+    left: 1284px;
+    top: 57px;
+}
+
+.admin-menu.shrink {
+    border: 1px solid #0054a3;
+    background: #FFFFFF;
+    color: #FFFFFF;
+    top: 52px;
+}
+
+.admin-menu a {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.admin-menu.shrink a {
+    color: #0054a3;
+}

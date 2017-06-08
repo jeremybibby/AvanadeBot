@@ -1,0 +1,36 @@
+<div class="site-header-background">
+
+    <my-app-nav [isShrinkNav]="isShrinkNav"></my-app-nav>
+
+    <div style="padding-top:9rem; padding-bottom:10rem;">
+        <div style="font-size:36px; color:#FFFFFF;" >
+            Hi <span style="font-weight:bolder;">User</span>, how can we help you today?
+        </div>
+        <div style="width:808px;display:inline-block;padding-top:45px;">
+            <input style="width:800px;height:57px;font-size:22px;padding:15px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;float:left;"
+                placeholder="Search for tools, support, ticket status, and more..." />
+            <input type="image" src="../content/search.png" alt="Search" style="margin-top:1px;margin-left:-60px;padding-left:15px;height:56px;" />
+        </div>
+    </div>    
+</div>
+
+<div style="text-align:center;">
+    <div>
+        <img src="../content/body_1.png" style="margin-top:-48px;" />
+    </div>
+    <div>
+        <img src="../content/body_2.png" style="margin-top:50px;margin-bottom:40px;" />
+    </div>
+</div>
+
+
+<!--<dropdown [values]="dropdownValues" (select)="setSeverityFilter($event.value)"></dropdown>
+
+<h3>Top Alerts</h3>
+<div class="grid grid-pad">
+    <a *ngFor="let alert of gccAlerts" [routerLink]="['/detail', alert.id]" class="col-1-4">
+        <div class="module gcc-alert">
+            <h4>{{alert.severity}} - {{alert.component}}</h4>
+        </div>
+    </a>
+</div>-->

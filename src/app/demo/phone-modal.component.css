@@ -1,0 +1,18 @@
+.modal {
+  background: rgba(0,0,0,0.8);
+}
+.modal-dialog {
+    padding-top: 240px;
+}
+.modal-content {
+    width: 400px;
+}
+.modal-header {
+    display:none;
+}
+.modal-body {
+    padding: 0;
+}
+.modal-footer {
+    display:none;
+}

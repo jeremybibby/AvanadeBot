@@ -1,0 +1,60 @@
+<my-app-nav [isShrinkNav]="true"></my-app-nav>
+<div style="width:100%;padding-top: 50px;text-align:center;">
+    <div style="background-color:rgba(230,230,230,0.5);padding-top:20px;padding-bottom:20px;">
+        <div style="display:inline-block;width:1200px;text-align:left;">
+            <div style="font-size:3rem;">Get Support</div>
+            <div>Please answer a few questions so we can direct you to the best support option</div>
+        </div>
+    </div>
+    <div class="chatbot-area">
+        <div style="margin-top:20px;margin-left:20px;font-size:1.5rem;">Chat with us:</div>
+        <div class="chat-box">
+            <div class="chat-messages-box">
+                <div *ngFor="let message of messages" [ngClass]="{'bot-text-block': message.type === 0, 'user-text-block': message.type !== 0, 'old-text-block': message.archive}">
+                    <div class="chat-text" [ngClass]="message.type === 0 ? 'bot-text' : 'user-text'">
+                        
+                        <div class="author-name" *ngIf="message.type === 0">
+                            {{ message.author }}
+                        </div>
+                        <div>{{ message.text }}</div>
+
+                        <div *ngFor="let meetingRoom of message.meetingRooms" class="chat-option-selection" (click)="sendText(meetingRoom.name)">
+                            <div class="chat-option-title meeting-room-title">
+                                {{ meetingRoom.name }}
+                            </div>
+                            <div class="meeting-room-icon">
+                                <div class="meeting-room-size" [ngClass]="{'double-digit': meetingRoom.size > 9}">
+                                    {{ meetingRoom.size }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div *ngFor="let article of message.articles" (click)="openArticle(article.url)" title="{{article.url}}" class="chat-option-selection article-selection">
+                            <div class="chat-option-title article-title">
+                                {{ article.name }}
+                            </div>
+                            <div class="article-description">
+                                {{ article.description }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="chat-input-box" (submit)="send()">
+                <input [(ngModel)]="textInput" placeholder="Type your response here..." [ngModelOptions]="{standalone: true}" />
+                <button type="submit">SEND</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="info-box-right">
+        <div class="info-box-header">Did you know?</div>
+        Using BT's self-service tools instead of calling the Pfizer BT Service Desk
+        saves you time and saves Pfizer millions. Thank you for visiting BT 
+        <i>On Demand</i> for your technical support needs.
+    </div>
+
+    <!--<div style="text-align: center;padding-top: 50px;padding-bottom: 50px;width:100%;">
+        <img src="../content/get_support_static.png" />
+    </div>-->
+</div>

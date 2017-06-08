@@ -1,0 +1,19 @@
+<div *ngIf="gccAlert">
+  <h2>{{gccAlert.component}} - {{gccAlert.severity}}</h2>
+  <div>
+    <label>id: </label>{{gccAlert.id}}</div>
+  <div>
+    <label>component: </label>
+    <input [(ngModel)]="gccAlert.component" placeholder="component" />
+  </div>
+  <div>
+    <label>severity: </label>
+    <input [(ngModel)]="gccAlert.severity" placeholder="1" />
+  </div>
+  <div>
+    <label>description: </label>
+    <input [(ngModel)]="gccAlert.description" placeholder="description" />
+  </div>
+  <button (click)="save()">Save</button>
+  <button (click)="goBack()">Back</button>
+</div>

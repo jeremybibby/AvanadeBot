@@ -1,0 +1,143 @@
+.chatbot-area {
+    width:1200px;
+    text-align:left;
+    padding-left:180px;
+    margin-bottom: 75px;
+    display:inline-block;
+}
+
+.chat-box {
+    width: 900px;
+    border: 3px solid #0054a3;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+.chat-messages-box {
+    padding: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.author-name {
+    color: orangered;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.old-text-block {
+    opacity: 0.5;
+}
+
+.bot-text-block {
+    text-align: left;
+}
+
+.user-text-block {
+    text-align: right;
+}
+
+.chat-text {
+    max-width:600px;
+    display:inline-block;
+    border:0px solid #444444;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin: 10px;
+}
+
+.bot-text {
+    text-align:left;
+    background-color: #DDDDDD;
+}
+
+.user-text {
+    color: #FFFFFF;
+    background-color: #4FD73B;
+}
+
+.chat-option-selection {
+    border: 5px solid #0054a3;
+    background-color: #FFFFFF;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.article-selection {
+    width: 170px;
+}
+
+.chat-option-title {
+    background-color: #0054a3;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.meeting-room-title {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.article-title {
+    font-size: 0.65rem;
+}
+
+.meeting-room-icon {
+    background-image: url(../content/users.jpg);
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin: 20px;
+}
+
+.meeting-room-size {
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    position: relative;
+    top: 44px;
+    left: 40px;
+}
+
+.meeting-room-size.double-digit {
+    top: 43px;
+    left: 27px;
+}
+
+.article-description {
+    font-size: 0.5rem;
+    padding: 5px;
+}
+
+.chat-input-box {
+    height: 42px;
+    padding: 5px;
+}
+
+.chat-input-box input {
+    width:800px;
+    padding:2px 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    float:left;
+}
+
+.chat-input-box button {
+    width:80px;
+    margin-left:4px;
+}
+
+.info-box-right {
+    float: right;
+    width: 400px;
+    background-color: gainsboro;
+    padding: 75px;
+    margin-top:50px;
+}
+
+.info-box-right .info-box-header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
