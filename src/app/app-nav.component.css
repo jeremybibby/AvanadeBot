@@ -92,3 +92,54 @@ nav a.active {
 .admin-menu.shrink a {
     color: #0054a3;
 }
+.chatbot-phone, .phone {
+            margin: -90px 208px auto 208px !important;
+            position: absolute;
+            width: 416px;
+            height: 826px;
+            /*background: url("/Content/img/iphone-portrait.png?v=1122015");*/
+            background: url("../content/iphone6-portrait-white.png");
+            background-size: 95%;
+            background-repeat: no-repeat;
+        }
+
+        .close a {
+            display: block;
+            position: absolute;
+            opacity: 0;
+            background: blue;
+        }
+
+        .chatbot-phone .screen {
+            position: absolute;
+            left: 6px;
+            top: 63px;
+            width: 368px;
+            height: 638px;
+            color: #fff;
+            display: none;
+        }
+
+            .chatbot-phone .screen:first-child {
+                display: block;
+            }
+
+            .chatbot-phone .screen iframe, .chatbot-phone .screen img {
+                width: 350px;
+                height: 610px;
+                border: 0;
+            }
+
+            .chatbot-phone .screen iframe {
+                background: #fff;
+                position: absolute;
+                top: 40px;
+                left: 15px;
+            }
+
+            .chatbot-phone .screen a {
+                display: block;
+                position: absolute;
+                opacity: 0;
+                background: #00b1ff;
+            }
