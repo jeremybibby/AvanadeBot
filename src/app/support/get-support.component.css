@@ -7,20 +7,30 @@
 }
 
 .chat-box {
+    font-size: 1.5rem;
     width: 900px;
     border: 3px solid #0054a3;
     border-radius: 4px;
+    margin-top: 20px;
     margin-left: 20px;
+}
+
+.chat-box iframe {
+    width: 894px;
+    height: 600px;
+    margin-bottom:-5px;
 }
 
 .chat-messages-box {
     padding: 20px;
+    min-height: 300px;
     max-height: 500px;
     overflow-y: auto;
 }
 
 .author-name {
     color: orangered;
+    font-size: 2rem;
     font-weight: bold;
     padding-bottom: 5px;
 }
@@ -80,7 +90,7 @@
 }
 
 .article-title {
-    font-size: 0.65rem;
+    font-size: 1.5rem;
 }
 
 .meeting-room-icon {
@@ -93,23 +103,24 @@
 
 .meeting-room-size {
     color: #FFFFFF;
-    font-size: 2.5rem;
+    font-size: 3rem;
     position: relative;
-    top: 44px;
-    left: 40px;
+    top: 50px;
+    left: 43px;
 }
 
 .meeting-room-size.double-digit {
-    top: 43px;
-    left: 27px;
+    top: 50px;
+    left: 33px;
 }
 
 .article-description {
-    font-size: 0.5rem;
+    font-size: 1rem;
     padding: 5px;
 }
 
 .chat-input-box {
+    border-top: 3px solid #0054a3;
     height: 42px;
     padding: 5px;
 }
@@ -133,7 +144,8 @@
     width: 400px;
     background-color: gainsboro;
     padding: 75px;
-    margin-top:50px;
+    margin-top: 25px;
+    font-size: 1.5rem;
 }
 
 .info-box-right .info-box-header {

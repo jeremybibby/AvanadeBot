@@ -2,14 +2,14 @@
 <div style="width:100%;padding-top: 50px;text-align:center;">
     <div style="background-color:rgba(230,230,230,0.5);padding-top:20px;padding-bottom:20px;">
         <div style="display:inline-block;width:1200px;text-align:left;">
-            <div style="font-size:3rem;">Get Support</div>
-            <div>Please answer a few questions so we can direct you to the best support option</div>
+            <div style="font-size: 3rem;">Get Support</div>
+            <div style="font-size: 2rem;">Please let us know what you need help with!</div>
         </div>
     </div>
     <div class="chatbot-area">
-        <div style="margin-top:20px;margin-left:20px;font-size:1.5rem;">Chat with us:</div>
         <div class="chat-box">
-            <div class="chat-messages-box">
+            <iframe name="frame" src='https://webchat.botframework.com/embed/pzbot?s=iqc-bSw6fkI.cwA.tTQ.uwd3hw2Sag-PyQLItoy9meotCBF9SlHMW8dMTt5ShBM'></iframe>
+            <!--<div class="chat-messages-box">
                 <div *ngFor="let message of messages" [ngClass]="{'bot-text-block': message.type === 0, 'user-text-block': message.type !== 0, 'old-text-block': message.archive}">
                     <div class="chat-text" [ngClass]="message.type === 0 ? 'bot-text' : 'user-text'">
                         
@@ -43,7 +43,7 @@
             <form class="chat-input-box" (submit)="send()">
                 <input [(ngModel)]="textInput" placeholder="Type your response here..." [ngModelOptions]="{standalone: true}" />
                 <button type="submit">SEND</button>
-            </form>
+            </form>-->
         </div>
     </div>
 

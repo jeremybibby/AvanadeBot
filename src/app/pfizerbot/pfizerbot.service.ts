@@ -48,19 +48,19 @@ export class PfizerbotService {
         let response = new BotMessage(0, "PfizerBot");
         let m = message.toLowerCase();
 
-        if (m.includes("fix") && (m.includes("meeting") || m.includes("conference") || m.includes("projector") || m.includes("room"))) {
+        if (m.includes("fix") || m.includes("meeting") || m.includes("conference") || m.includes("projector") || m.includes("room")) {
             response.text = `Please confirm the meeting room below:`;
             response.meetingRooms = [
-                new MeetingRoom(6, "MeetingRoom1"),
-                new MeetingRoom(8, "MeetingRoom2"),
-                new MeetingRoom(12, "MeetingRoom3")
+                new MeetingRoom(4, "Raptors"),
+                new MeetingRoom(8, "Blue Jays"),
+                new MeetingRoom(16, "Maple Leafs")
             ];
         } else if (m.includes("fijar") && (m.includes("reunión") || m.includes("reunion") || m.includes("conferencia") || m.includes("proyector") || m.includes("sala"))) {
             response.text = `Por favor confirme la sala de reuniones a continuación:`;
             response.meetingRooms = [
-                new MeetingRoom(6, "MeetingRoom1"),
-                new MeetingRoom(8, "MeetingRoom2"),
-                new MeetingRoom(12, "MeetingRoom3")
+                new MeetingRoom(4, "Raptors"),
+                new MeetingRoom(8, "Blue Jays"),
+                new MeetingRoom(16, "Maple Leafs")
             ];
         } else if (message.startsWith("MeetingRoom")) {
             response.text = `I’ve opened a ticket to fix the projector in Meeting Room: "${message}". 

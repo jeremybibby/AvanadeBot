@@ -29,7 +29,7 @@ export class PhoneModalComponent {
   public onContainerClicked(event: MouseEvent): void {
     if ((<HTMLElement>event.target).classList.contains('modal')) {
       this.hide();
-      this.router.navigate(['/getSupport', 'Eliza']);
+      this.router.navigate(['/getSupport', 'Elisa']);
     }
   }
 }

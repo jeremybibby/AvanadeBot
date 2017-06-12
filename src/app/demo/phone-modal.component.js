@@ -29,7 +29,7 @@ var PhoneModalComponent = (function () {
     PhoneModalComponent.prototype.onContainerClicked = function (event) {
         if (event.target.classList.contains('modal')) {
             this.hide();
-            this.router.navigate(['/getSupport', 'Eliza']);
+            this.router.navigate(['/getSupport', 'Elisa']);
         }
     };
     return PhoneModalComponent;

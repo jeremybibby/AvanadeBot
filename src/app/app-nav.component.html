@@ -1,13 +1,13 @@
 <div class="site-header header" [ngClass]="{'shrink': isShrinkNav }">
-    <div class="row">
+    <div class="row" style="max-width:120rem;">
         <div class="brand-container medium-12 large-4 columns small-centered medium-uncentered" style="width:33.3%;">
             <a class="site-header--logo" href="/index.html" style="background-image:url('../content/bt-logo.png');"></a>
             <a routerLink="/dashboard" class="site-header--title">
-                BT <i>On Demand</i>
+                Pfizer BT <i>On Demand</i>
             </a>
         </div>
 
-        <div class="medium-12 large-8 columns" style="width:66.6%; display:inline-block; text-align: right; margin-top:15px;margin-bottom:5px;">
+        <div class="medium-12 large-8 columns" style="width:66.6%; display:inline-block; text-align: right; margin-top:15px; margin-bottom:15px; font-size:1.75rem;">
             <nav>
                 <a routerLink="/getSupport" routerLinkActive="active">Get Support</a>
                 <a routerLink="/alerts" routerLinkActive="active">My Alerts</a>
@@ -20,7 +20,7 @@
 </div>
 
 <div [hidden]="!isAdminMenuVisible" class="admin-menu" [ngClass]="{'shrink': isShrinkNav }">
-    <a (click)="modal.show(); hideAdminMenu()">Log in as Eliza</a>
+    <a (click)="modal.show(); hideAdminMenu()">Log in as Elisa</a>
 </div>
 <phone-modal>
     <div class="chatbot-phone">

@@ -31,7 +31,8 @@ var GetSupportComponent = (function () {
         this.scrollToBottom();
     };
     GetSupportComponent.prototype.setUserAndGetMessages = function (userName) {
-        this.userName = userName;
+        this.userName = userName.charAt(0).toUpperCase() + userName.slice(1);
+        ;
         return this.pfizerbotService.getMessagesForUser(userName);
     };
     GetSupportComponent.prototype.send = function () {
@@ -42,7 +43,7 @@ var GetSupportComponent = (function () {
     };
     GetSupportComponent.prototype.sendText = function (text) {
         var _this = this;
-        var userMessage = new bot_message_1.BotMessage(0, this.userName, text, false);
+        var userMessage = new bot_message_1.BotMessage(1, this.userName, text, false);
         this.messages.push(userMessage);
         this.pfizerbotService.sendMessage(userMessage.text, this.userName)
             .then(function (res) { return _this.addMessageAndOptions(res); });
@@ -57,7 +58,9 @@ var GetSupportComponent = (function () {
     GetSupportComponent.prototype.scrollToBottom = function () {
         if (this.newMessage) {
             var ele = document.getElementsByClassName('chat-messages-box');
-            ele[0].scrollTop = ele[0].scrollHeight;
+            if (ele[0]) {
+                ele[0].scrollTop = ele[0].scrollHeight;
+            }
             this.newMessage = false;
         }
     };

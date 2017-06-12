@@ -19,7 +19,7 @@
 }
 .site-header .site-header--title {
     color: white;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 300;
     display: inline-block;
     padding-left: 0.8rem;
@@ -35,17 +35,27 @@
   top: 0px;
   width: 100%;
 }
+.header .row .brand-container {
+    text-align: left;
+}
 .header.shrink .row .brand-container {
-  margin-top:5px;
+  margin-top: 5px;
 }
 .header nav, .header .brand-container {
-  margin-top:10px;
+  margin-top: 10px;
+  text-align: right;
 }
 .header.shrink nav {
-  margin-top:0px;
+  margin-top: 0px;
 }
 .header.shrink a, .header.shrink .site-header--title {
   color: #0054a3;
+}
+.header.shrink a:hover {
+    border: 1px solid #0054a3;
+}
+.header.shrink .site-header--title:hover {
+    border:none;
 }
 nav a {
   text-decoration: none;
@@ -73,33 +83,43 @@ nav a.active {
     width: 130px;
     padding: 5px;
     position: fixed;
-    left: 1284px;
-    top: 57px;
+    left: 1411px;
+    top: 55px;
 }
 
 .admin-menu.shrink {
     border: 1px solid #0054a3;
     background: #FFFFFF;
     color: #FFFFFF;
-    top: 52px;
+    top: 50px;
+    z-index: 1000;
 }
 
 .admin-menu a {
     color: #FFFFFF;
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .admin-menu.shrink a {
     color: #0054a3;
+    cursor: pointer;
+    cursor: hand;
 }
+
+.modal-dialog {
+    width: 380px;
+    margin-top: 100px;
+}
+
 .chatbot-phone, .phone {
-            margin: -90px 208px auto 208px !important;
+            margin: -240px auto auto auto !important;
             position: absolute;
-            width: 416px;
-            height: 826px;
+            width: 400px;
+            height: 820px;
             /*background: url("/Content/img/iphone-portrait.png?v=1122015");*/
             background: url("../content/iphone6-portrait-white.png");
-            background-size: 95%;
+            background-size: 100%;
             background-repeat: no-repeat;
         }
 
@@ -112,9 +132,8 @@ nav a.active {
 
         .chatbot-phone .screen {
             position: absolute;
-            left: 6px;
-            top: 63px;
-            width: 368px;
+            top: 60px;
+            width: 400px;
             height: 638px;
             color: #fff;
             display: none;
@@ -125,8 +144,8 @@ nav a.active {
             }
 
             .chatbot-phone .screen iframe, .chatbot-phone .screen img {
-                width: 350px;
-                height: 610px;
+                width: 368px;
+                height: 627px;
                 border: 0;
             }
 

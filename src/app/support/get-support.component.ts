@@ -36,7 +36,7 @@ export class GetSupportComponent  {
   }
 
   setUserAndGetMessages(userName: string): Promise<BotMessage[]> {
-    this.userName = userName;
+    this.userName = userName.charAt(0).toUpperCase() + userName.slice(1);;
     return this.pfizerbotService.getMessagesForUser(userName);
   }
 
@@ -48,7 +48,7 @@ export class GetSupportComponent  {
   }
 
   sendText(text: string): void {
-    let userMessage = new BotMessage(0, this.userName, text, false);
+    let userMessage = new BotMessage(1, this.userName, text, false);
     this.messages.push(userMessage);
     this.pfizerbotService.sendMessage(userMessage.text, this.userName)
                           .then(res => this.addMessageAndOptions(res));
@@ -66,7 +66,9 @@ export class GetSupportComponent  {
   scrollToBottom(): void {
     if (this.newMessage) {
       let ele = document.getElementsByClassName('chat-messages-box');
-      ele[0].scrollTop = ele[0].scrollHeight;
+      if (ele[0]) {
+        ele[0].scrollTop = ele[0].scrollHeight;
+      }
       this.newMessage = false;
     }
   }

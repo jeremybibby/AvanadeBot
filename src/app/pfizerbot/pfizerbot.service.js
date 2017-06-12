@@ -38,20 +38,20 @@ var PfizerbotService = (function () {
     PfizerbotService.prototype.sendMessage = function (message, author) {
         var response = new bot_message_1.BotMessage(0, "PfizerBot");
         var m = message.toLowerCase();
-        if (m.includes("fix") && (m.includes("meeting") || m.includes("conference") || m.includes("projector") || m.includes("room"))) {
+        if (m.includes("fix") || m.includes("meeting") || m.includes("conference") || m.includes("projector") || m.includes("room")) {
             response.text = "Please confirm the meeting room below:";
             response.meetingRooms = [
-                new meeting_room_1.MeetingRoom(6, "MeetingRoom1"),
-                new meeting_room_1.MeetingRoom(8, "MeetingRoom2"),
-                new meeting_room_1.MeetingRoom(12, "MeetingRoom3")
+                new meeting_room_1.MeetingRoom(4, "Raptors"),
+                new meeting_room_1.MeetingRoom(8, "Blue Jays"),
+                new meeting_room_1.MeetingRoom(16, "Maple Leafs")
             ];
         }
         else if (m.includes("fijar") && (m.includes("reunión") || m.includes("reunion") || m.includes("conferencia") || m.includes("proyector") || m.includes("sala"))) {
             response.text = "Por favor confirme la sala de reuniones a continuaci\u00F3n:";
             response.meetingRooms = [
-                new meeting_room_1.MeetingRoom(6, "MeetingRoom1"),
-                new meeting_room_1.MeetingRoom(8, "MeetingRoom2"),
-                new meeting_room_1.MeetingRoom(12, "MeetingRoom3")
+                new meeting_room_1.MeetingRoom(4, "Raptors"),
+                new meeting_room_1.MeetingRoom(8, "Blue Jays"),
+                new meeting_room_1.MeetingRoom(16, "Maple Leafs")
             ];
         }
         else if (message.startsWith("MeetingRoom")) {

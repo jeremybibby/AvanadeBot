@@ -3,6 +3,8 @@
 }
 .modal-dialog {
     padding-top: 240px;
+    margin-top: 100px;
+    width: 400px;
 }
 .modal-content {
     width: 400px;
