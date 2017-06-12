@@ -144,8 +144,8 @@ nav a.active {
             }
 
             .chatbot-phone .screen iframe, .chatbot-phone .screen img {
-                width: 368px;
-                height: 627px;
+                width: 295px;
+                height: 502px;
                 border: 0;
             }
 
@@ -154,6 +154,13 @@ nav a.active {
                 position: absolute;
                 top: 40px;
                 left: 15px;
+                -ms-zoom: 0.75;
+                -moz-transform: scale(0.75);
+                -moz-transform-origin: 0 0;
+                -o-transform: scale(0.75);
+                -o-transform-origin: 0 0;
+                -webkit-transform: scale(1.25);
+                -webkit-transform-origin: 0 0;
             }
 
             .chatbot-phone .screen a {
