@@ -8,24 +8,14 @@
 
 .chat-box {
     font-size: 1.5rem;
-    width: 900px;
-    border: 3px solid #0054a3;
     border-radius: 4px;
     margin-top: 20px;
     margin-left: 20px;
 }
 
 .chat-box iframe {
-    width: 715px;
-    height: 450px;
-    margin-bottom: 107px;
-    -ms-zoom: 0.75;
-    -moz-transform: scale(0.75);
-    -moz-transform-origin: 0 0;
-    -o-transform: scale(0.75);
-    -o-transform-origin: 0 0;
-    -webkit-transform: scale(1.25);
-    -webkit-transform-origin: 0 0;
+    width: 800px;
+    height: 500px;
 }
 
 .chat-messages-box {

@@ -83,7 +83,7 @@ nav a.active {
     width: 130px;
     padding: 5px;
     position: fixed;
-    left: 1411px;
+    left: 1413px;
     top: 55px;
 }
 
@@ -99,6 +99,7 @@ nav a.active {
     color: #FFFFFF;
     font-weight: bold;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .admin-menu.shrink a {
@@ -144,8 +145,8 @@ nav a.active {
             }
 
             .chatbot-phone .screen iframe, .chatbot-phone .screen img {
-                width: 295px;
-                height: 502px;
+                width: 368px;
+                height: 627px;
                 border: 0;
             }
 
@@ -154,13 +155,6 @@ nav a.active {
                 position: absolute;
                 top: 40px;
                 left: 15px;
-                -ms-zoom: 0.75;
-                -moz-transform: scale(0.75);
-                -moz-transform-origin: 0 0;
-                -o-transform: scale(0.75);
-                -o-transform-origin: 0 0;
-                -webkit-transform: scale(1.25);
-                -webkit-transform-origin: 0 0;
             }
 
             .chatbot-phone .screen a {
